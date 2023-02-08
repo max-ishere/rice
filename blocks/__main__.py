@@ -3,7 +3,7 @@ import importlib
 
 
 def main(module: str):
-    print(gen_md(importlib.import_module('rice.block.' + module)))
+    print(gen_md(importlib.import_module('rice.blocks.' + module)))
 
 
 def gen_md(module) -> str:
