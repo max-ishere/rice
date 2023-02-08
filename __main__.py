@@ -1,4 +1,5 @@
 from .generators.tofi import *
+from .blocks.tofi_apple_theme import AppleTofi
 
 
 def main():
@@ -16,7 +17,7 @@ def main():
     )
 
     theme = Theme(font=fonts, font_size=FontSize(normal=11), colors=colors)
-    Tofi.apple(theme).default_header().deploy()
+    AppleTofi(theme).default_header().deploy()
 
 
 if __name__ == "__main__":
